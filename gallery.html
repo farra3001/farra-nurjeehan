@@ -1,0 +1,174 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-image: url(images/tree\ background.jpg);
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+    <p style="text-align: center;">
+        <a href="index.html" target="main">Homepage</a>
+        <a href="biodata.html"target="main">Biodata</a>
+        <a href="family.html"target="main">Family</a>
+        <a href="education.html"target="main">Education</a>
+        <a href="experience.html"target="main">Experience</a>
+        <a href="gallery.html"target="main">Gallery</a>
+        </p>
+
+<div class="header" id="myHeader">
+  <h1><font face="Garamond"><font size="10px"> My Life Album</font></font></h1>
+  <p><font face="Georgia"><font size="4px">You are now watching my 20 years of living journey. This album consist of my favourite people, beings and moment.
+    <br>This are the moment that I will cherish forever.
+    <br>Have fun watching! 
+    <span style='font: size 5px;'></span>
+    <br>Click here to watch more &#10549; </font></font>
+</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<div class="row"> 
+  <div class="column">
+    <img src="images/sunset.jpeg" style="width:100%">
+    <img src="images/food 1.jpeg" style="width:100%">
+    <img src="images/hobby 3.jpeg" style="width:100%">
+    <img src="images/friend 3.jpeg" style="width:100%">
+    <img src="images/me.jpeg" style="width:100%">
+    <img src="images/tina.jpeg" style="width:100%">
+    <img src="images/hobby 1.jpeg" style="width:100%">
+    <img src="images/opil.jpeg" style="width:100%">
+    <img src="images/us.jpeg" style="width:100%">
+    <img src="images/food 4.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/ibu and ayah.jpg" style="width:100%">
+    <img src="images/me and ayah.jpeg" style="width:100%">
+    <img src="images/me and ibu.jpg" style="width:100%">
+    <img src="images/me and abang.jpg" style="width:100%">
+    <img src="images/me and kakak.jpeg" style="width:100%">
+    <img src="images/me and sarah.jpeg" style="width:100%">
+    <img src="images/me and intan.jpeg" style="width:100%">
+    <img src="images/me and aimi.jpeg" style="width:100%">
+    <img src="images/me and anim.jpeg" style="width:100%">
+    <img src="images/me and jannah.jpeg" style="width:100%">
+    <img src="images/me and fikri.jpeg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/putrajaya.jpeg" style="width:100%">
+    <img src="images/ladies.jpeg style="width:100%">
+    <img src="images/friend.jpg" style="width:100%">
+    <img src="images/best moment.jpeg" style="width:100%">
+    <img src="images/w madam intan.jpeg" style="width:100%">
+    <img src="images/me and cat.jpeg" style="width:100%">
+    <img src="images/iqie.jpeg" style="width:100%">
+    <img src="images/isk.jpeg" style="width:100%">
+    <img src="images/me graduate.jpg" style="width:100%">
+    <img src="images/me in kl.jpeg" style="width:100%">
+    <img src="images/masjid putrajaya.jpeg" style="width:100%">
+    <img src="images/books 2.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/beach.jpeg" style="width:100%">
+    <img src="images/books.jpeg" style="width:100%">
+    <img src="images/food 2.jpeg" style="width:100%">
+    <img src="images/sunset 2.jpeg" style="width:100%">
+    <img src="images/tina lagi.jpeg" style="width:100%">
+    <img src="images/kari.jpeg" style="width:100%">
+    <img src="images/food 3.jpeg" style="width:100%">
+    <img src="images/random.jpeg" style="width:100%">
+    <img src="images/wonwoo.jpg" style="width:100%">
+    <img src="images/dokyeom.jpg" style="width:100%">
+</div>
+
+<script>
+var elements = document.getElementsByClassName("column");
+
+var i;
+
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
