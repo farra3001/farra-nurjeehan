@@ -1,0 +1,28 @@
+
+a:link
+{
+    color: darkblue;
+    background-color: beige;
+    text-decoration: none;
+    padding: 15px;
+    display: inline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a:visited
+{
+    color: darkblue;
+    background-color: beige;
+    text-decoration: dotted;
+}
+a:hover
+{
+    color: rgb(216, 171, 87);
+    background-color:rgb(76, 38, 32);
+    text-decoration: underline;
+}
+a:active
+{
+    color: goldenrod;
+    background-color: ghostwhite;
+    text-decoration: none;
+}
