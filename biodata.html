@@ -1,0 +1,229 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url(images/grass\ background.jpg);
+            background-repeat:repeat;
+            background-size:contain ;
+          }
+          
+          .flip-card {
+            background-color: transparent;
+            width: 400px;
+            height: 300px;
+            perspective: 1000px;
+            float:left;
+          }
+          
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+          
+          .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          
+          .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+          
+          .flip-card-front {
+            background-color: #bbb;
+            color: black;
+          }
+          
+          .flip-card-back {
+            background-color: #799362;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          </style>
+          </head>
+          <body>
+            <p style="text-align: center;">
+              <a href="index.html" target="main">Homepage</a>
+              <a href="biodata.html"target="main">Biodata</a>
+              <a href="family.html"target="main">Family</a>
+              <a href="education.html"target="main">Education</a>
+              <a href="experience.html"target="main">Experience</a>
+              <a href="gallery.html"target="main">Gallery</a>
+              </p>
+          
+          <h1 style="background-image: url(images/green\ box.jpg);" align="center"><font face="serif"><font color="#024924"><font size="20px"> get to know me!</font></font></font></h1>
+          <h4><font color="white">Hover over the image below</font></h4>
+          
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/me 3.jpeg" alt="Avatar" style="width:300px;height:410px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Farra Nurjeehan binti Kamaruzaman</h1> 
+                <ul type="circle">
+                <li>Student</li>
+                <li>20 years old</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/me 2.jpeg" alt="Avatar" style="width:300px;height:400px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>1st January 2003</h1> 
+                <ul type="square">
+                <li>Born in Melaka</li>
+                <li>Staying at Alai, Melaka</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </p>
+          <p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/me again.jpeg" alt="Avatar" style="width:300px;height:400px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Circle of colour</h1> 
+                    <ul type="circle">
+                        <li>White</li>
+                        <li><font color="#9FE2BF">Sage Green</font></li>
+                        <li><font color="brown">Brown</font></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </p>
+          </body>
+          <p>
+          <body>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/books.jpeg" alt="Avatar" style="width:300px;height:400px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>My favourite hobby</h1> 
+                    <p><b>Reading</b></p> 
+                    <ul type="square">
+                    <li>This has been my mini library collection. I really love reading and my favourite author is Teme Abdullah.
+                    <br>I read books with slice of life and romance genre. Next time, I would love to try other genre like thriller or horror. </li></p>
+                    </ul>
+                </div>
+                </div>
+            </div>
+          </body>
+          </p>
+          <p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/hobby 1.jpeg" alt="Avatar" style="width:300px;height:400px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>My favourite hobby</h1> 
+                    <p><b>Journalling</b></p> 
+                    <ul type="circle">
+                        <li>Journalling is one of my hobby as well. In my opinion, journalling helps in bringing </p>
+                            <p>me back to reality. I wrote what I did, feel and sketch anything.</p>
+                            <p>Journalling is a therapeutic activity for me.</p></li>
+                  </div>
+                </div>
+            </div>
+          </p>
+          <p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/hobby 2.jpeg" alt="Avatar" style="width:300px;height:400px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>My favourite hobby</h1> 
+                    <p><b>Customizing</b></p> 
+                    <ul type="square"></ul>
+                    <li>I have tried a new hobby that is quite challenging which is to customize my shoes.
+                    <br>I challenged myself to do this activity and was quite satisfied with the outcome. 
+                    <br>This activity requires patience and high precision.
+                    <br>Definitely, a 10/10 experience.</li></p>
+                  </div>
+                </div>
+            </div>
+          </p>
+          <p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/taehyung.jpg" alt="Avatar" style="width:230px;height:400px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>My favourite idol</h1> 
+                    <p><b>Kim Taehyung</b></p>
+                    <ul type="circle">
+                        <li>This is my favourite idol since 2017. His name is Kim Taehyung and
+                            <br>he is from a K-pop band group, BTS. His position is main singer and dancer.
+                            <br>My favourite track from their album is 'Hold Me Tight'.</p></li> 
+                        </ul>        
+                  </div>
+                </div>
+            </div>
+          </p>
+          <p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/kopi.jpeg" alt="Avatar" style="width:250px;height:400px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>My cat</h1> 
+                    <p><b>Kopi</b></p>
+                    <ul type="square">
+                    <li>This is my favourite being in the world. My cats!
+                    <br>This one is Kopi. He has been with me for almost 2 years.
+                    <br>There will never be a day where he would sit still.
+                    <br>I really love Kopi and if he left me, this world would be meaningless for me.</li></p>
+                    </ul>
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </p>
+          <p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/5A.jpeg" alt="Avatar" style="width:300px;height:400px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>My diploma mates</h1> 
+                    <p><b>5A</b></p> 
+                    <ul type="circle"></ul>
+                    <li>My diploma journey began with these people and still together until the end.
+                    <br>5A has been supportive with group projects, classes and assignments.
+                    <br>We made sure that everyone is included in everything and do it together.
+                    <br>I hope their degree journey is as bright as diamond. Thank you 5A !</li></p>
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </p>
+        </body>
+    </head>
+</html>
